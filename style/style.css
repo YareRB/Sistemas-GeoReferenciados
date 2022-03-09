@@ -61,3 +61,15 @@ body {
   border-radius: 15%;
   color: rgba(255, 255, 255, 0.728) !important;
 }
+
+.btn-obtener{
+    border-color: rgb(66, 95, 98);
+    color: rgb(66, 95, 98);
+    width: 10em;
+
+}
+.btn-obtener:hover {
+    color: white;
+    background-color: rgb(66, 95, 98);
+    border: none;
+  }
