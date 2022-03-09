@@ -63,13 +63,13 @@ body {
 }
 
 .btn-obtener{
-    border-color: rgb(66, 95, 98);
-    color: rgb(66, 95, 98);
-    width: 10em;
+    border-color: rgb(66, 95, 98) !important;
+    color: rgb(66, 95, 98) !important;
+    width: 10em !important;
 
 }
 .btn-obtener:hover {
-    color: white;
-    background-color: rgb(66, 95, 98);
-    border: none;
+    color: white !important;
+    background-color: rgb(66, 95, 98) !important;
+    border: none !important;
   }
