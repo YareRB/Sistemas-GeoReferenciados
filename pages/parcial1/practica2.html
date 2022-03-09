@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="https://yareli-ramirez.github.io/Sistemas-GeoReferenciados/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f80099478c.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/f992bf6ca6.js" crossorigin="anonymous"></script>
 </head>
 <body class="body-gral">
     <nav class="navbar navbar-light bg-dark">
@@ -21,45 +20,47 @@
 
     <div class="container text-center p-3">
         <button class="btn btn-outline-info btn-obtener" onclick="obtieneDatos()">Obtener datos</button>
+        <br><br>
         <div class="container-fluid text-center row m-2">
-            <div class="col-12 col-m-6 col-lg-3 col-xs-12" data-aos="zoom-in-right" data-aos-duration="1000">
-                <img class="div-ind" src="https://cdn.pixabay.com/photo/2019/09/22/16/20/location-4496459_960_720.png" alt="Maps">
-                <p class="m-2"> <strong> Práctica 1</strong></p>
+            <div class="col-12 col-m-6 col-lg-3 col-xs-12">
+                <i class="fa-brands fa-chrome fa-8x"></i>                
+                <p class="m-2"> <strong>Nombre del navegador</strong></p>
+                <p id="nombre"></p>
             </div>
-           
+            <div class="col-12 col-m-6 col-lg-3 col-xs-12">
+                <i class="fa-solid fa-v fa-8x"></i>              
+                <p class="m-2"> <strong>Version del navegador</strong></p>
+                <p id="version"></p>
+            </div>
+            <div class="col-12 col-m-6 col-lg-3 col-xs-12">
+                <i class="fa-solid fa-wifi fa-8x"></i>           
+                <p class="m-2"> <strong>Estatus de Internet</strong></p>
+                <p id="internet"></p>
+            </div>
+            <div class="col-12 col-m-6 col-lg-3 col-xs-12">
+                <i class="fa-solid fa-desktop fa-8x"></i>              
+                <p class="m-2"> <strong>Plataforma</strong></p>
+                <p id="plataforma"></p>
+            </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row m-5">
-            <div class="col-12 ">
-                <button onclick="obtieneDatos()" class="btn btn-info text-center">Obtiene datos del navegador</button>
-                <ul class="m-5" id="navegador">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+   
     <script>
 
-
-        var navegador = document.getElementById("navegador")
-
-        var datos = navegador.getElementsByTagName("li") //Creamos arreglo de datos, de nuestra lista
+        var nombre = document.getElementById("nombre")
+        var version = document.getElementById("version")
+        var internet = document.getElementById("internet")
+        var plataforma = document.getElementById("plataforma")
 
         function obtieneDatos(){
 
-            datos[0].innerHTML = "Nombre del navegador es: " + navigator.appCodeName
-            datos[1].innerHTML = "La versión del navegador es: " + navigator.appVersion
-            datos[2].innerHTML = "Estatus de Internet: " + navigator.onLine
-            datos[3].innerHTML = "Plataforma: " + navigator.platform
+            nombre.innerHTML = navigator.appCodeName
+            version.innerHTML = navigator.appVersion
+            internet.innerHTML = navigator.onLine
+            plataforma.innerHTML = navigator.platform
+           
         }
-        AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </body>
 </html>
