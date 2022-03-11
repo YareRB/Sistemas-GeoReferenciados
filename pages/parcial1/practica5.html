@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #efefef;
+        }
+
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row m-5">
+                <div class="col-12 p-5">
+                    <h1>Mapa con infoWindow</h1>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var informacion = "<h1>Universidad de la Salle Bajío</h1>"
+        informacion += "<p><strong>Dirección Av. Universidad 602, Lomas del Campestre</strong></p>"
+        informacion += "<p><strong>477 710 8500</strong></p>"
+        function iniciaMapa(){
+            var propiedades = {
+                center: {
+                    lat: 21.152554317180016, 
+                    lng: -101.7113239312814 
+                },
+                zoom: 14 
+            }
+
+            const mapa = document.getElementById("map")
+
+            const map = new google.maps.Map(mapa, propiedades)
+
+            if(navigator.geolocation){
+
+                //obtener posicion
+                navigator.geolocation.getCurrentPosition(position => {
+                    let posicion = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                    }
+
+                    //marcador
+                    let propiedadesMarcador = {
+                        position : posicion,
+                        map,
+                        title: "Marcador",
+                    }
+
+                    const marcador = new google.maps.Marker(propiedadesMarcador)
+
+                    //centrar mapa
+                    map.setCenter(posicion);
+                    
+                    const infoWindow = new google.maps.InfoWindow({
+                        content: informacion
+                    })
+
+                    marcador.addListener("click", ()=>{
+                        infoWindow.open(map,marcador)
+                    });
+
+                })
+
+               
+            }
+        }
+    </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AlzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
+
+</body>
+</html>
