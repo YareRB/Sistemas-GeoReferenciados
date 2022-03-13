@@ -12,12 +12,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f80099478c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <button onclick="obtieneUbicacion()">Obtener ubicación</button>
-    <div id="mapa">
-        <img id="imagenmapa" src="" alt="Imagen de mapa">
-        <p id="alerta"></p>
+<body class="body-gral">
+    <nav class="navbar navbar-light bg-dark">
+        <div class="d-flex flex-row justify-content-center text-nav p-2">
+          IMAGEN DE MAPA UBICACION 
+        </div>
+      </nav>
+    <div class="text-center">
+        <button class="btn btn-outline-info btn-obtener m-2" onclick="obtieneUbicacion()">Obtener ubicación</button>
+        <div id="mapa">
+            <img id="imagenmapa" src="" alt="Imagen de mapa">
+            <p class="text2" id="alerta"></p>
+        </div>
     </div>
+    
     <script>
         var mapa =  document.getElementById("mapa");
 

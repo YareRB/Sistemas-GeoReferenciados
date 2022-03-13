@@ -24,13 +24,18 @@
 
 
 </head>
-<body>
+<body class="body-gral">
+    <nav class="navbar navbar-light bg-dark">
+        <div class="d-flex flex-row justify-content-center text-nav p-2">
+          InfoWindow
+        </div>
+      </nav>
 
     <div class="container-fluid">
         <div class="container">
             <div class="row m-5">
                 <div class="col-12 p-5">
-                    <h1>Mapa con infoWindow</h1>
+                    <i class="fa-solid fa-location-dot fa-2x"></i><h1 class="text2">Mapa con infoWindow</h1>
                     <div id="map"></div>
                 </div>
             </div>
@@ -40,9 +45,9 @@
 
     <script>
 
-        var informacion = "<h1>Universidad DelaSalle Bajío</h1>";
-        informacion += "<p><strong>Dirección: Av Universidad 602, Lomas del Campestre</strong></p>";
-        informacion += "<p><strong>Teléfono: 477 710 8500</strong></p>";
+        var informacion = '<h1 class="text3">Universidad DelaSalle Bajío</h1>';
+        informacion += '<p class="text3"><strong>Dirección: Av Universidad 602, Lomas del Campestre</strong></p>';
+        informacion += '<p class="text3"><strong>Teléfono: 477 710 8500</strong></p>';
 
         function iniciaMapa() {
 
