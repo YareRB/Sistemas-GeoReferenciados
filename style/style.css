@@ -91,3 +91,7 @@ font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-
 .tamaño {
 height: 40em;
 }
+
+.margin-l {
+  margin-left: 40%;
+}

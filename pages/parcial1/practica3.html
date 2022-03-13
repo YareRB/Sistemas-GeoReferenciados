@@ -12,7 +12,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f80099478c.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body-gral">
+    <nav class="navbar navbar-light bg-dark">
+      <div class="d-flex flex-row justify-content-center text-nav p-2 margin-l">
+        <i class="fa-solid fa-location-pin text-white"></i>OBTENER COORDENADAS 
+      </div>
+    </nav>
+
     <p>Haz clic en el botón para obtener las coordenadas</p>
     <button onclick="getLocation()">Obtener coordenadas</button>
     <p id="mapa"></p>
