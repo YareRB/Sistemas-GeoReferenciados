@@ -23,10 +23,10 @@
         <p class="text3 p-2">Haz clic en el botón para obtenerlas</p>
         <button class="btn btn-outline-info btn-obtener" onclick="getLocation()">Obtener coordenadas</button>
         <div class="row m-2 ">
-            <div class="col-6 text-end">
+            <div class="col-4 text-end hid" id="icono">
                 <i class="fa-solid fa-map-location-dot fa-3x"></i>
             </div>
-            <div class="col-6 text-start">
+            <div class="col-8 text-start">
                 <p class="text3" id="mapa"></p>
 
             </div>
@@ -35,6 +35,7 @@
     </div>
     <script>
         var mapa =  document.getElementById("mapa")
+        var icono =  document.getElementById("icono")
 
         function getLocation() {
             if(navigator.geolocation){
@@ -45,6 +46,7 @@
         }
 
         function muestraPosicion(posicion) {
+            icono.className = "col-4 text-end vis"
             mapa.innerHTML = "<strong>Latitud: </strong>" + posicion.coords.latitude + "<br>" + "<strong>Longitud:</strong> " + posicion.coords.longitude
         }
     </script>

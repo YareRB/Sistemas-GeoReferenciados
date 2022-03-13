@@ -92,3 +92,10 @@ font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-
 height: 40em;
 }
 
+.hid {
+  visibility: hidden;
+}
+
+.vis{
+  visibility: visible;
+}
