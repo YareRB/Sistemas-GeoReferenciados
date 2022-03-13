@@ -14,16 +14,18 @@
 </head>
 <body class="body-gral">
     <nav class="navbar navbar-light bg-dark">
-      <div class="d-flex flex-row justify-content-center">
-       <p class=" text-nav p-2">  <i class="fa-solid fa-map-pin text-white"></i> OBTENER COORDENADAS </p> 
+      <div class="d-flex flex-row justify-content-center p-2">
+       <p class=" text-nav">  <i class="fa-solid fa-map-pin text-white"></i> OBTENER COORDENADAS </p> 
       </div>
     </nav>
     <div class="text-center">
-        <h1 class="text2 p-2"><i class="fa-solid fa-circle-question"></i> ¿Deseas conocer tus coordenadas?</h1>
+        <i class="fa-solid fa-circle-question fa-6x"></i>
+        <h1 class="text2 p-2"> ¿Deseas conocer tus coordenadas?</h1>
 
         <p class="text3 p-2">Haz clic en el botón para obtenerlas</p>
         <button class="btn btn-outline-info btn-obtener" onclick="getLocation()">Obtener coordenadas</button>
-        <p id="mapa"></p>
+        <p class="text3" id="mapa"></p>
+        
     </div>
     <script>
         var mapa =  document.getElementById("mapa")
@@ -37,7 +39,7 @@
         }
 
         function muestraPosicion(posicion) {
-            mapa.innerHTML = "Latitud: " + posicion.coords.latitude + "<br>" + "Longitud: " + posicion.coords.longitude
+            mapa.innerHTML = '<i class="fa-solid fa-map-location-dot fa-3x"></i>Latitud: ' + posicion.coords.latitude + "<br>" + "Longitud: " + posicion.coords.longitude
         }
     </script>
 
