@@ -24,7 +24,7 @@
         <button class="btn btn-outline-info btn-obtener" onclick="getLocation()">Obtener coordenadas</button>
         <div class="row m-2 ">
             <div class="col-5 text-end" >
-                <i class="fa-solid fa-map-location-dot fa-3x hid" id="icono"></i>
+                <p id="icono"></p>
             </div>
             <div class="col-7 text-start">
                 <p class="text3" id="mapa"></p>
@@ -46,7 +46,7 @@
         }
 
         function muestraPosicion(posicion) {
-            icono.className = "fa-solid fa-map-location-dot fa-3x vis"
+            icono.innerHTML = '<i class="fa-solid fa-map-location-dot fa-3x" ></i>'
             mapa.innerHTML = "<strong>Latitud: </strong>" + posicion.coords.latitude + "<br>" + "<strong>Longitud:</strong> " + posicion.coords.longitude
         }
     </script>
