@@ -18,11 +18,13 @@
         <i class="fa-solid fa-map-pin text-white m-2"></i>OBTENER COORDENADAS 
       </div>
     </nav>
-    <i class="fa-solid fa-face-thinking"></i><h1 class="text2 p-2">¿Deseas conocer tus coordenadas?</h1>
+    <div class="text-center">
+        <i class="fa-solid fa-face-thinking"></i><h1 class="text2 p-2">¿Deseas conocer tus coordenadas?</h1><i class="fa-solid fa-question"></i>
 
-    <p class="text3 p-2">Haz clic en el botón para obtenerlas</p>
-    <button onclick="getLocation()">Obtener coordenadas</button>
-    <p id="mapa"></p>
+        <p class="text3 p-2">Haz clic en el botón para obtenerlas</p>
+        <button class="btn btn-outline-info btn-obtener" onclick="getLocation()">Obtener coordenadas</button>
+        <p id="mapa"></p>
+    </div>
     <script>
         var mapa =  document.getElementById("mapa")
 
