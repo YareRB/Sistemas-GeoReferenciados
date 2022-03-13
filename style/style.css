@@ -73,3 +73,21 @@ body {
     background-color: rgb(66, 95, 98) !important;
     border: none !important;
 }
+
+.nav-w {
+  height: 6em;
+}
+
+.text {
+font-family: "Courier New", Courier, monospace !important;
+}
+.text2 {
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+.text3 {
+font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif Geneva, Verdana, sans-serif!important;
+}
+
+.tamaño {
+height: 40em;
+}
