@@ -38,7 +38,7 @@
             map = new google.maps.Map(document.getElementById("map"), propiedades);
 
             var icono = {
-                url : "https://media1.giphy.com/media/858MhQPSWtNyVTM078/200w.webp?cid=ecf05e47mue7dz1v0gwxeyc7qppjy6g9649p1b22dzzka9t6&rid=200w.webp&ct=g",
+                url : "https://media.giphy.com/media/1ZweHMlSaxcc32mSSu/giphy.gif",
                 scaledSize : new google.maps.Size(50,50),
                 origin : new google.maps.Point(0,0),
                 anchor : new google.maps.Point(0,0),
@@ -49,6 +49,28 @@
                 icon: icono,
                 map: map
             });
+
+            if(navigator.geolocation)
+            {
+                setInterval(()=> {
+                    moverPosicion(marker);
+                },5000);
+
+            }
+
+            function moverPosicion(marker){
+                navigator.geolocation.getCurrentPosition( posicion => {
+                    var pos = {
+                        lat: posicion.coords.latitude,
+                        lng: posicion.coords.longitude,
+                    }
+
+                    marker.setPosition(pos);
+                    map.panTo(pos);
+                    map.setCenter(pos);
+                });
+
+            }
         }
     </script>
     
