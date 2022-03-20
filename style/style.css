@@ -92,10 +92,18 @@ font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-
 height: 40em;
 }
 
-.hid {
-  visibility: hidden !important;
+.nav-large {
+  margin: 1%;
+  text-align: center;
+  height: 1em !important;
 }
 
-.vis{
-  visibility: visible !important;
+.valoresdefecto {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map6 {
+  height: 90%;
 }

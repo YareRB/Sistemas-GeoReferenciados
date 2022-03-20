@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="valoresdefecto">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,75 +7,21 @@
     <title>Práctica 6</title>
     <link rel = "icon" href = "../../img/LogoBlancoC.svg" type = "image/x-icon">
 
+    <link rel="stylesheet" href="../../style/style.css">
     <style>
-        #map {
-            height: 100%;
-        }
 
-        html,body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+
+      
     </style>
 </head>
-<body>
-
-    <div id="map"></div>
-    
-    <script>
-        var map;
-
-        var coordenadas = {
-            lat: 0,
-            lng:0
-        };
-
-        var propiedades = {
-            center: coordenadas,
-            zoom:20
-        }
-
-        function iniciaMapa(){
-            map = new google.maps.Map(document.getElementById("map"), propiedades);
-
-            var icono = {
-                url : "https://cdn.pixabay.com/photo/2017/01/11/08/31/icon-1971129_960_720.png",//"https://media.giphy.com/media/1ZweHMlSaxcc32mSSu/giphy.gif",
-                scaledSize : new google.maps.Size(50,50),
-                origin : new google.maps.Point(0,0),
-                anchor : new google.maps.Point(0,0),
-            }
-
-            var marker = new google.maps.Marker({
-                position: coordenadas,
-                icon: icono,
-                map: map
-            });
-
-            if(navigator.geolocation)
-            {
-                setInterval(()=> {
-                    moverPosicion(marker);
-                },5000);
-
-            }
-
-            function moverPosicion(marker){
-                navigator.geolocation.getCurrentPosition( posicion => {
-                    var pos = {
-                        lat: posicion.coords.latitude,
-                        lng: posicion.coords.longitude,
-                    }
-
-                    marker.setPosition(pos);
-                    map.panTo(pos);
-                    map.setCenter(pos);
-                });
-
-            }
-        }
-    </script>
-    
+<body class="valoresdefecto">
+    <nav class="navbar navbar-light bg-dark">
+        <div class="d-flex flex-row justify-content-center text-nav nav-large ">
+            UBICACION REAL 
+        </div>
+      </nav>
+    <div id="map6"></div>
+   <script src="../../js/metodos.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
 </body>
 </html>
