@@ -14,7 +14,7 @@ function iniciaMapa() {
   map = new google.maps.Map(document.getElementById("map6"), propiedades);
 
   var icono = {
-    url: "https://cdn.pixabay.com/photo/2017/01/11/08/31/icon-1971129_960_720.png", //"https://media.giphy.com/media/1ZweHMlSaxcc32mSSu/giphy.gif",
+    url: "https://c.tenor.com/MPrZD7nJwlsAAAAj/greet-i%27m-here.gif",//"https://cdn.pixabay.com/photo/2017/01/11/08/31/icon-1971129_960_720.png", //"https://media.giphy.com/media/1ZweHMlSaxcc32mSSu/giphy.gif",
     scaledSize: new google.maps.Size(50, 50),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(0, 0),
