@@ -62,16 +62,15 @@ body {
   color: rgba(255, 255, 255, 0.728) !important;
 }
 
-.btn-obtener{
-    border-color: rgb(66, 95, 98) !important;
-    color: rgb(66, 95, 98) !important;
-    width: 10em !important;
-
+.btn-obtener {
+  border-color: rgb(66, 95, 98) !important;
+  color: rgb(66, 95, 98) !important;
+  width: 10em !important;
 }
 .btn-obtener:hover {
-    color: white !important;
-    background-color: rgb(66, 95, 98) !important;
-    border: none !important;
+  color: white !important;
+  background-color: rgb(66, 95, 98) !important;
+  border: none !important;
 }
 
 .nav-w {
@@ -79,17 +78,19 @@ body {
 }
 
 .text {
-font-family: "Courier New", Courier, monospace !important;
+  font-family: "Courier New", Courier, monospace !important;
 }
 .text2 {
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif !important;
 }
 .text3 {
-font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif Geneva, Verdana, sans-serif!important;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif Geneva, Verdana, sans-serif !important;
 }
 
 .tamaño {
-height: 40em;
+  height: 40em;
 }
 
 .nav-large {
@@ -99,11 +100,22 @@ height: 40em;
 }
 
 .valoresdefecto {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #map6 {
   height: 90%;
 }
+
+/* #Region Practica 7 */
+
+.body-white {
+  background-color: white;
+}
+
+.nav-oscura {
+  background-color: #212529!important;
+}
+/* #endregion */
