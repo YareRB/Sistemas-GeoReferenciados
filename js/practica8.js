@@ -1,6 +1,6 @@
 var paises = document.getElementById("paises");
 
-fetch("../../../../json/paises.json").then(function (response) {
+fetch("../json/paises.json").then(function (response) {
   response.json().then(function (datos) {
     let contador = 1;
 
