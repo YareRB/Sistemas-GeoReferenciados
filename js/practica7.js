@@ -1,6 +1,6 @@
 var paises = document.getElementById("paises");
 
-fetch("https://yareli-ramirez.github.io/Sistemas-GeoReferenciados/json/datos.json").then(function (response) {
+fetch("../../../json/datos.json").then(function (response) {
   response.json().then(function (datos) {
     datos.forEach((registro) => {
       let nombre = document.createElement("p"); // crear elemento
