@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch 3</title>
+    <title>Práctica Fetch 3</title>
     <link rel = "icon" href = "../../../img/LogoBlancoC.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="../../../style/style.css">
+
     <style>
         #map {
             width: 100%;
@@ -18,7 +20,6 @@
             padding: 0;
         }
     </style>
-    <div id="map"></div>
 
     <script>
         var coordenadas = {
@@ -74,7 +75,12 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
 
 </head>
-<body>
-    
+<body class="body-white">
+    <nav class="navbar navbar-light bg-dark nav-oscura">
+        <div class="d-flex flex-row justify-content-center text-nav nav-large ">
+            Países con Covid
+        </div>
+      </nav>
+      <div id="map"></div>
 </body>
 </html>
