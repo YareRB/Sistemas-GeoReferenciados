@@ -14,7 +14,7 @@ fetch("../../../json/paises.json").then(function (response) {
       renglon.appendChild(columna);
 
       let nombre = document.createElement("p"); // crear parrafo
-      nombre.textContent = contador + ")" + registro.CountryName; //agregar información
+      nombre.textContent = contador + ") " + registro.CountryName; //agregar información
       columna.appendChild(nombre);
       contador++;
 
