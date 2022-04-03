@@ -48,8 +48,8 @@ function iniciaMapa() {
     propiedades
   );
 
-  marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
+    position: coordenadas,
     map: map,
-    position: new google.maps.LatLng(coordenadas.lat, coordenadas.lng),
   });
 }
