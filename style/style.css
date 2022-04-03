@@ -68,7 +68,7 @@ body {
 
 .btn-satellite {
   background-color: #3a5e83 !important;
-  border-color: #1a436d !important;
+  border: none !important;
   color: white !important;
 }
 .btn-satellite:hover {
@@ -79,7 +79,7 @@ body {
 
 .btn-roadmap {
   background-color:  #074f98 !important;
-  border-color: #1a436d !important;
+  border: none !important;
   color: white !important;
 }
 .btn-roadmap:hover {
@@ -90,7 +90,7 @@ body {
 
 .btn-hybrid {
   background-color: #548384 !important;
-  border-color: #3a9582 !important;
+  border: none !important;
   color: white !important;
 }
 
@@ -102,7 +102,7 @@ body {
 
 .btn-terrain {
   background-color: #1fa7b1 !important;
-  border-color: #3a9582 !important;
+  border: none !important;
   color: white !important;
 }
 
@@ -113,7 +113,7 @@ body {
 }
 .btn-obtener {
   border-color: rgb(66, 95, 98) !important;
-  color: rgb(66, 95, 98) !important;
+  border: none !important;
   width: 10em !important;
 }
 .btn-obtener:hover {
