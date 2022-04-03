@@ -2,7 +2,6 @@ var coordenadas = {
     lat: -31.563910, lng: 147.154312
 }
 
-
 var localidades = [
     {lat: -31.563910, lng: 147.154312},
     {lat: -33.718234, lng: 150.363181},
@@ -31,7 +30,7 @@ var localidades = [
 
 function iniciaMapa() {
     var map = new google.maps.Map(
-    document.getElementById('mapa'),
+    document.getElementById('mapa11'),
         {
             center: coordenadas,
             zoom: 3,
