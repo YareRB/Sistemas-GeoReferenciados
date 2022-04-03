@@ -26,8 +26,9 @@ fetch("../../../json/paises.json").then(function (response) {
 
       renglon.addEventListener("click", function () {
         //OBTENEMOS COORDENADAS
-        coordenadas.lat = registro.CapitalLatitude;
-        coordenadas.lng = registro.CapitalLongitude;
+        coordenadas.lat = parseFloat(registro.CapitalLatitude);
+        coordenadas.lng = parseFloat(registro.CapitalLongitude);
+        
         iniciaMapa()
       });
     });
@@ -38,6 +39,7 @@ fetch("../../../json/paises.json").then(function (response) {
 
 function iniciaMapa() {
 
+  console.log(coordenadas)
   let propiedades = {
     center: coordenadas,
     zoom: 2,
