@@ -11,7 +11,7 @@ function iniciaMapa(){
     fetch('../../../json/paises.json')
     .then(function(response){
         response.json().then(function(datos){
-            const map = new google.maps.Map(document.getElementById('map'), propiedades);
+            const map = new google.maps.Map(document.getElementById('map9'), propiedades);
             datos.forEach(marcador => {  
                 var informacion = "<strong>País: </strong>" + marcador.CountryName;
                 var infoWindow = new google.maps.InfoWindow({content: informacion});
