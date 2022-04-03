@@ -5,7 +5,7 @@ var coordenadas = {
 
 var propiedades = {
     center : coordenadas,
-    zoom : 20
+    zoom : 2
 }
 function iniciaMapa (){
 

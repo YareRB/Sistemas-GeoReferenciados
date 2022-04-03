@@ -42,7 +42,7 @@ function iniciaMapa() {
   console.log(coordenadas)
   let propiedades = {
     center: coordenadas,
-    zoom: 2,
+    zoom: 4,
   };
 
   const map = new google.maps.Map(
