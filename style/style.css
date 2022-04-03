@@ -128,6 +128,16 @@ body {
   height: 90%;
 }
 
+#mapa8 {
+  height: 30rem;
+  position: fixed !important;
+  
+}
+
+.apoyo{
+  height: 25rem;
+}
+
 /* #Region Practica 7 */
 
 .body-white {
@@ -137,10 +147,30 @@ body {
 .nav-oscura {
   background-color: #212529!important;
 }
+
+.card-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(145, 181, 185) !important;
+  border: 1px solid #19446f !important;
+}
+
+.size-card {
+  height: 100% !important;
+}
+
+.div-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 /* #endregion */
 
 .image-si {
-  width: 20rem !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 10%;
 }
 
 .mt-6 {

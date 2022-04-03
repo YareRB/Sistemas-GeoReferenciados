@@ -1,15 +1,17 @@
 [
   {
-    "country": "Mexico",
+    "country": "México",
     "cases": 203,
-    "image": "https://cdn.shopify.com/s/files/1/0036/6896/7491/t/68/assets/mexico-flag.png?v=8699155535254267749"
+    "image": "https://th.bing.com/th/id/OIP.kGaV1NVhPn2mMBGRXkMCQgHaEK?pid=ImgDet&rs=1"
   },
   {
-    "country": "Panama",
-    "cases": 200
+    "country": "Panamá",
+    "cases": 200,
+    "image": "https://www.porlaeducacion.mx/wp-content/uploads/2019/02/significan-los-colores-la-bandera-panama.jpg"
   },
   {
     "country": "Colombia",
-    "cases": 196
+    "cases": 196,
+    "image": "https://www.banderas-mundo.es/data/flags/w1600/co.png"
   }
 ]
