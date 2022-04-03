@@ -28,7 +28,7 @@ fetch("../../../json/paises.json").then(function (response) {
         //OBTENEMOS COORDENADAS
         coordenadas.lat = registro.CapitalLatitude;
         coordenadas.lng = registro.CapitalLongitude;
-        colocarMapa()
+        iniciaMapa()
       });
     });
   });
@@ -36,7 +36,7 @@ fetch("../../../json/paises.json").then(function (response) {
 
 
 
-function colocarMapa() {
+function iniciaMapa() {
 
   let propiedades = {
     center: coordenadas,
