@@ -67,48 +67,48 @@ body {
 }
 
 .btn-satellite {
-  background-color: #3a5e83 !important;
+  background-color: #930d83 !important;
   border: none !important;
   color: white !important;
 }
 .btn-satellite:hover {
   color: white !important;
-  background-color: #074f98 !important;
+  background-color: #5e0e41 !important;
   border: none !important;
 }
 
 .btn-roadmap {
-  background-color:  #074f98 !important;
+  background-color:  #a81010 !important;
   border: none !important;
   color: white !important;
 }
 .btn-roadmap:hover {
   color: white !important;
-  background-color: #3a5e83 !important;
+  background-color: #671418 !important;
   border: none !important;
 }
 
 .btn-hybrid {
-  background-color: #548384 !important;
+  background-color: #bf5813 !important;
   border: none !important;
   color: white !important;
 }
 
 .btn-hybrid:hover {
   color: white !important;
-  background-color: #1fa7b1 !important;
+  background-color: #573118 !important;
   border: none !important;
 }
 
 .btn-terrain {
-  background-color: #1fa7b1 !important;
+  background-color: #bd3d90 !important;
   border: none !important;
   color: white !important;
 }
 
 .btn-terrain:hover {
   color: white !important;
-  background-color:#548384  !important;
+  background-color:#930654  !important;
   border: none !important;
 }
 .btn-obtener {
