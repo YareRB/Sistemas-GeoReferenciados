@@ -3,15 +3,18 @@ var paises = document.getElementById("paises");
 fetch("../../../json/datos.json").then(function (response) {
   response.json().then(function (datos) {
     datos.forEach((registro) => {
+      let div = document.createElement("div");
+      div.className = " col-3 m-2 text-center ";
+
       let card = document.createElement("div"); // crear elemento
-      card.className = "card m-2"; // agregando clase css row
+      card.className = "card rounded text-center"; // agregando clase css row
 
       let image = document.createElement("img");
-      image.className = "card-img-top";
+      image.className = "card-img-top image-si";
       image.src = registro.image;
 
       let divBody = document.createElement("div"); 
-      card.className = "card-body"
+      divBody.className = "card-body"
 
       let nombre = document.createElement("h5");
       nombre.className = "card-title";
@@ -27,6 +30,10 @@ fetch("../../../json/datos.json").then(function (response) {
 
       card.appendChild(image);
       card.appendChild(divBody);
+
+      div.appendChild(card);
+
+      paises.appendChild(div);
 
     /*  nombre.textContent =
         "País: " + registro.country + " , casos: " + registro.cases;

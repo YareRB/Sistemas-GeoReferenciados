@@ -20,6 +20,20 @@ body {
   width: 12em;
   height: 12em;
   border-radius: 50%;
+ /* background-color: #19446f;*/
+  color:  #19446f; /*rgb(224, 225, 227);*/
+  text-align: center;
+}
+
+.div-ind2 {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+  color: #6f1948;
+  text-align: center;
+}
+.col-blue {
+  color: cadetblue;
 }
 
 .div-gde {
@@ -40,8 +54,9 @@ body {
 }
 
 .btn-ir {
-  border-color: rgb(66, 95, 98);
-  color: rgb(66, 95, 98);
+  background-color: #212529;
+  border-color: #212529;
+  color: white;
   width: 5em;
 }
 
@@ -89,6 +104,10 @@ body {
     sans-serif Geneva, Verdana, sans-serif !important;
 }
 
+.text-black 
+{
+  color: black;
+}
 .tamaño {
   height: 40em;
 }
@@ -119,3 +138,15 @@ body {
   background-color: #212529!important;
 }
 /* #endregion */
+
+.image-si {
+  width: 20rem !important;
+}
+
+.mt-6 {
+  margin-top: 2.5rem!important;
+}
+
+.mb-8 {
+  margin-bottom: 7rem!important;
+}
