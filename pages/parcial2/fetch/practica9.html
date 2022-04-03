@@ -22,60 +22,6 @@
             padding: 0;
         }
     </style>
-
-    <script>
-        var coordenadas = {
-            lat :0,
-            lng : 0
-        }
-
-        var propiedades = {
-            center : coordenadas,
-            zoom : 2
-        }
-        function iniciaMapa (){
-
-            const map = new google.maps.Map(document.getElementById("map"), propiedades); // crear constante mapa
-
-            const marcadores = obtieneMarcadores();
-
-            console.log(marcadores);
-
-            for(marcador of marcadores){
-                marker = new google.maps.Marker({
-                    map : map,
-                    position : new google.maps.LatLng(marcador.latitude, marcador.longitude),
-                    title : marcador.name
-                });
-            }
-        }
-
-        function obtieneMarcadores () {
-            const markers = [
-                {
-                    name : "Mexico",
-                    longitude : "-99.1276", 
-                    latitude : "19.427"
-                },
-                {
-                    name : "Brasil",
-                    longitude : "-47.9292", 
-                    latitude : "-15.7801"
-                },
-                {
-                    name : "España",
-                    longitude : "-3.70327", 
-                    latitude : "40.4167"
-                }
-            ]
-
-            return markers;
-        }
-
-
-    </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
-
 </head>
 <body class="body-white">
     <nav class="navbar navbar-light bg-dark nav-oscura">
@@ -83,7 +29,10 @@
             Ubicaciones con pin
         </div>
       </nav>
-      <div id="map"></div>
+      <div id="map9"></div>
+
+      <script src="../../../js/Parcial2/practica9.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>

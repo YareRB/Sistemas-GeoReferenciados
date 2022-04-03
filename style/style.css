@@ -167,6 +167,18 @@ body {
 }
 /* #endregion */
 
+#map9 {
+  width: 100%;
+  height: 90%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .image-si {
   width: 100% !important;
   height: 100% !important;

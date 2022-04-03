@@ -5,56 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de información por paises</title>
-    <style>
-        #map {
-            height: 100%;
-        }
+    <link rel = "icon" href = "../../../img/LogoBlancoC.svg" type = "image/x-icon">
 
-        html,body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../../../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div id="map"></div>
+    <nav class="navbar navbar-light bg-dark div-center">
+        <div class="d-flex flex-row justify-content-center text-nav p-2">
+          INFORMACION POR PAISES
+        </div>
+      </nav>
+    <div id="map9"></div>
 
-    <script>
-        var coordenadas = {
-            lat: 0,
-            lng: 0
-        };
-        var propiedades = {
-            center: coordenadas,
-            zoom: 2
-        };
-
-        function iniciaMapa(){
-            fetch('../../../json/paises.json')
-            .then(function(response){
-                response.json().then(function(datos){
-                    const map = new google.maps.Map(document.getElementById('map'), propiedades);
-                    datos.forEach(marcador => {  
-                        var informacion = "<strong>País: </strong>" + marcador.CountryName;
-                        var infoWindow = new google.maps.InfoWindow({content: informacion});
-                        let marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(marcador.CapitalLatitude, marcador.CapitalLongitude),
-                            title: marcador.CountryName
-                        });
-                        marker.addListener('click', function(){
-                            infoWindow.open(map, marker);
-                        });
-                    });
-                })
-            })
-            .catch(function(error){
-                console.log('Hubo un problema con la peticion Fetch ' + error.message);
-            });
-        }
-    </script>
+    <script src="../../../js/Parcial2/practica10.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
 </body>
 </html>
