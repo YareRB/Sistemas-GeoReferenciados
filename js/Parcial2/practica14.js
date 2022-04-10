@@ -8,7 +8,7 @@ function iniciaMapa(){
         
     };
 
-    var mapa = document.getElementById("map");
+    var mapa = document.getElementById("map14");
 
     var map = new google.maps.Map(mapa, propiedades);
 
