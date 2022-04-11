@@ -47,7 +47,8 @@ function iniciaMapa(){
                 var velocidad = position.coords.speed ? position.coords.speed : 'no disponible';
                 var fechayhora = (new Date(position.timestamp)).toString();
                 const html = `
-                    <p>Coordenadas: ${ coordenadas }</p>
+                    <i class="fa-solid fa-map-location-dot fa-3x" ></i>'<br>
+                    <p><strong>Coordenadas:</strong> ${ coordenadas }</p>
                     <p>Exactitud: ${ exactitud }</p>
                     <p>Altitud: ${ altitud }</p>
                     <p>Velocidad: ${ velocidad }</p>
@@ -64,6 +65,7 @@ function iniciaMapa(){
             if(watchId !== null){
                 navigator.geolocation.clearWatch(watchId);
                 const html = `
+                    <i class="fa-solid fa-hand fa-3x"></i>
                     <p>Se detuvo el monitoreo</p>
                 `;
                 const datos = document.getElementById('datos');
