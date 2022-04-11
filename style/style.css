@@ -153,6 +153,9 @@ body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif Geneva, Verdana, sans-serif !important;
 }
+.space {
+  letter-spacing: 2px !important;
+}
 
 .text-black 
 {
@@ -258,4 +261,8 @@ html, body {
 
 .mb-8 {
   margin-bottom: 7rem!important;
+}
+
+.form-select {
+  border-radius: 1rem !important;
 }
