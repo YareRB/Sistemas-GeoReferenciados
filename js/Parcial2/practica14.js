@@ -47,7 +47,6 @@ function iniciaMapa(){
                 var velocidad = position.coords.speed ? position.coords.speed : 'no disponible';
                 var fechayhora = (new Date(position.timestamp)).toString();
                 const html = `
-                    <i class="fa-solid fa-map-location-dot fa-3x" ></i>'<br>
                     <p><strong>Coordenadas:</strong> ${ coordenadas }</p>
                     <p>Exactitud: ${ exactitud }</p>
                     <p>Altitud: ${ altitud }</p>
