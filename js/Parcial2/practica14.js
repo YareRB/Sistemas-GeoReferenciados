@@ -47,11 +47,16 @@ function iniciaMapa(){
                 var velocidad = position.coords.speed ? position.coords.speed : 'no disponible';
                 var fechayhora = (new Date(position.timestamp)).toString();
                 const html = `
-                    <p><strong>Coordenadas:</strong> ${ coordenadas }</p>
-                    <p>Exactitud: ${ exactitud }</p>
-                    <p>Altitud: ${ altitud }</p>
-                    <p>Velocidad: ${ velocidad }</p>
-                    <p>Fecha y hora: ${ fechayhora }</p>
+                    <i class="fa-solid fa-map-location-dot fa-3x" ></i><br><strong>Coordenadas:</strong>
+                    <p> ${ coordenadas }</p> <br>
+                    <i class="fa-solid fa-arrows-to-dot fa-3x" ></i><br><strong>Exactitud:</strong>
+                    <p> ${ exactitud }</p> <br>
+                    <i class="fa-solid fa-up-down fa-3x" ></i><br><strong>Altitud:</strong>
+                    <p>${ altitud }</p><br>
+                    <i class="fa-solid fa-gauge-high fa-3x" ></i><br><strong>Velocidad:</strong>
+                    <p> ${ velocidad }</p><br>
+                    <i class="fa-solid fa-calendar-day fa-3x" ></i><br><strong>Fecha y hora:</strong>
+                    <p>${ fechayhora }</p>
                 `;
                 const datos = document.getElementById('datos');
                 datos.innerHTML = html;

@@ -113,14 +113,14 @@ body {
 }
 .btn-obtener:hover {
     border-color: rgb(66, 95, 98) !important;
-    background-color: rgba(122, 140, 142, 0.292);
+    background-color: rgba(122, 140, 142, 0.292) !important;
     color: rgb(66, 95, 98) !important;
     width: 10em;
     font-weight: bold;
 }
 .btn-obtener {
   color: white !important;
-  background-color: rgb(66, 95, 98);
+  background-color: rgb(66, 95, 98) !important;
   border-color: rgb(66, 95, 98) !important;
   font-weight: bold;
   width: 10em;
