@@ -53,7 +53,7 @@ function iniciaMapa() {
     scaleControl: true,
     streetViewControl: true,
     streetViewControlOptions: {
-      position: position.maps.ControlPosition.LEFT_TOP
+      position : google.maps.ControlPosition.LEFT_TOP
     },
     fullscreenControl: true
   };
