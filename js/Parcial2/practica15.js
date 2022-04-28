@@ -12,20 +12,20 @@ function iniciaMapa() {
   // #region Propiedades
   var propiedades1 = {
     center: coordenadas,
-    zoom: 12,
+    zoom: 12
   };
 
   var propiedades2 = {
     center: coordenadas,
     zoom: 12,
-    disableDefaultUI: true,
+    disableDefaultUI: true
   };
 
   var propiedades3 = {
     center: coordenadas,
     zoom: 12,
     zoomControl: false,
-    scaleControl: false,
+    scaleControl: false
   };
 
   var propiedades4 = {
@@ -34,8 +34,8 @@ function iniciaMapa() {
     mapTypeControl: true,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-      mapTypeIds: ["roadmap", "satelite", "terrain"],
-    },
+      mapTypeIds: ["roadmap", "satelite", "terrain"]
+    }
   };
 
   var propiedades5 = {
@@ -53,9 +53,9 @@ function iniciaMapa() {
     scaleControl: true,
     streetViewControl: true,
     streetViewControlOptions: {
-      position: position.maps.ControlPosition.LEFT_TOP,
+      position: position.maps.ControlPosition.LEFT_TOP
     },
-    fullscreenControl: true,
+    fullscreenControl: true
   };
 
   var propiedades6 = {
@@ -63,14 +63,14 @@ function iniciaMapa() {
     zoom: 12,
     restriction: {
       latLngBounds: limites,
-      strictBounds: false,
-    },
+      strictBounds: false
+    }
   };
 
   var propiedades7 = {
     center: coordenadas,
     zoom: 19,
-    mapTypeId: "satellite",
+    mapTypeId: "satellite"
   };
 
   //#endregion
