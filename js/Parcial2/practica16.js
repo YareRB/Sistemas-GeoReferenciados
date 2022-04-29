@@ -57,7 +57,7 @@ function iniciaMapa() {
     infowindow.setContent("Zoom:" + nivelZoom);
     setTimeout(function(){
         infowindow.close();
-    }, 10000);
+    }, 5000);
   });
 
   //mapa 4
