@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares por ubicación</title>
+    <link rel = "icon" href = "../../img/LogoBlancoC.svg" type = "image/x-icon">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f80099478c.js" crossorigin="anonymous"></script>   
+
+</head>
+<body class="valoresdefecto body-gral" >
+    <nav class="navbar navbar-light bg-dark div-center">
+        <div class="d-flex flex-row justify-content-center text-nav p-2">
+            Lugares
+        </div>
+      </nav>
+
+      <div class="container-fluid m-2">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text2 mt-2">LUGARES POR UBICACIÓN</h1>
+            </div>
+        </div>
+        <div class="row text3">
+            <div class="col-4">
+                <select name="tipo" id="tipo" class="form-select text2 space">
+                    <option value="atm">Cajero automático</option>
+                    <option value="dentist">Dentista</option>
+                    <option value="clothing_store">Boutique</option>
+                    <option value="store">Tienda</option>
+                </select>
+                <ul id="placesList"></ul>
+            </div>
+            <div class="col-8 text2 ">
+                <div id="map17" ></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../js/Parcial2/practica17.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
+
+</body>
+</html>

@@ -20,8 +20,8 @@ body {
   width: 12em;
   height: 12em;
   border-radius: 50%;
- /* background-color: #19446f;*/
-  color:  #19446f; /*rgb(224, 225, 227);*/
+  /* background-color: #19446f;*/
+  color: #19446f; /*rgb(224, 225, 227);*/
   text-align: center;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .btn-roadmap {
-  background-color:  #a81010 !important;
+  background-color: #a81010 !important;
   border: none !important;
   color: white !important;
 }
@@ -108,15 +108,15 @@ body {
 
 .btn-terrain:hover {
   color: white !important;
-  background-color:#930654  !important;
+  background-color: #930654 !important;
   border: none !important;
 }
 .btn-obtener:hover {
-    border-color: rgb(66, 95, 98) !important;
-    background-color: rgba(122, 140, 142, 0.292) !important;
-    color: rgb(66, 95, 98) !important;
-    width: 10em;
-    font-weight: bold;
+  border-color: rgb(66, 95, 98) !important;
+  background-color: rgba(122, 140, 142, 0.292) !important;
+  color: rgb(66, 95, 98) !important;
+  width: 10em;
+  font-weight: bold;
 }
 .btn-obtener {
   color: white !important;
@@ -157,8 +157,7 @@ body {
   letter-spacing: 2px !important;
 }
 
-.text-black 
-{
+.text-black {
   color: black;
 }
 .tamaño {
@@ -177,7 +176,7 @@ body {
   padding: 0;
 }
 
-/* #region mapas */ 
+/* #region mapas */
 
 #map6 {
   height: 90%;
@@ -186,7 +185,6 @@ body {
 #mapa8 {
   height: 30rem;
   position: fixed !important;
-  
 }
 #map9 {
   width: 100%;
@@ -195,8 +193,8 @@ body {
 
 #mapa11 {
   width: 100%;
-  height: 630px;  
-} 
+  height: 630px;
+}
 
 #map12 {
   width: 100%;
@@ -208,14 +206,14 @@ body {
   height: 1024px;
 }
 
-#map15-1, #map15-2 , #map15-3, #map15-4, #map15-5, #map15-6, #map15-7{
+#map15-1,#map15-2,#map15-3,#map15-4,#map15-5,#map15-6,#map15-7, #map17 {
   width: 100%;
   height: 340px;
 }
 
 /* #endregion mapas*/
 
-.apoyo{
+.apoyo {
   height: 25rem;
 }
 
@@ -226,7 +224,7 @@ body {
 }
 
 .nav-oscura {
-  background-color: #212529!important;
+  background-color: #212529 !important;
 }
 
 .card-color {
@@ -248,7 +246,8 @@ body {
 }
 /* #endregion */
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -262,11 +261,11 @@ html, body {
 }
 
 .mt-6 {
-  margin-top: 2.5rem!important;
+  margin-top: 2.5rem !important;
 }
 
 .mb-8 {
-  margin-bottom: 7rem!important;
+  margin-bottom: 7rem !important;
 }
 
 .form-select {
