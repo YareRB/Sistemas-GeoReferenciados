@@ -47,6 +47,7 @@ function iniciaMapa() {
 
   //mapa 3
   mapa3.addListener("zoom_changed", function () {
+    infowindow.close();
     var infowindow = new google.maps.InfoWindow({
       content: "Cambia el zoom",
       position: coordenadas,
@@ -55,6 +56,7 @@ function iniciaMapa() {
     infowindow.open(mapa3);
     nivelZoom = mapa3.getZoom();
     infowindow.setContent("Zoom:" + nivelZoom);
+
   });
 
   //mapa 4
@@ -98,5 +100,5 @@ function iniciaMapa() {
     mapa6.panTo(coordenadas);
   });
   //#endregion
-  
+
 }
